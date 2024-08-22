@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000", // Replace with your client URL
+    origin: "https://golden-llama-e7b546.netlify.app", // Replace with your client URL
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
